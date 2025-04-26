@@ -25,7 +25,7 @@ resource "aws_s3_bucket" "tfstate_bucket" {
   }
 
   tags = {
-    Name        = var.bucket_name
+    Name        = local.bucket_name
     Environment = "dev"
   }
 }
